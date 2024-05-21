@@ -1,3 +1,7 @@
+body{
+  background-color: green;
+}
+
 .navbar{
   background-color: #e72222;
   box-shadow: 0 4px 4px 4px rgba(26, 25, 25, 0.2); 
