@@ -9,6 +9,7 @@ const Form = ({showForm,setShowForm}) => {
   return (
     <div>
       {showForm ? (
+    
         <div className="popup-form-overlay">
           <div className="popup-form">
             <div className="popup-form-header">
@@ -42,6 +43,7 @@ const Form = ({showForm,setShowForm}) => {
             </div>
           </div>
         </div>
+
       ):null}
     </div>
   );

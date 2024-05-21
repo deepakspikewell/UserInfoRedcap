@@ -13,20 +13,20 @@ const Table = ({setShowForm}) => {
   return (
     <div>
       <div
-        class=" d-flex justify-content-between "
+        class=" d-flex justify-content-between mt-4"
         style={{ fontWeight: "600", fontSize: "2rem", color: "#004879" }}
       >
         <div style={{ fontWeight: "600", fontSize: "2rem", color: "#004879" }}>
           User Information
         </div>
         <div>
-          <button type="submit" className="btn btn-danger " onClick={setShowForm}>
+          <button type="submit" className="btn btn-info " onClick={setShowForm}>
             ADD USER
           </button>
         </div>
       </div>
       {/* <div className="table-container mt-3 d-none d-lg-block"> */}
-      <div className="container mt-4 d-none d-lg-block">
+      <div className=" mt-4 d-none d-lg-block">
         <div className="row">
           <div className="col-12">
             <table className="table">

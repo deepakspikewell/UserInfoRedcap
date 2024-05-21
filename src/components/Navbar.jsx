@@ -1,35 +1,49 @@
 import React from "react";
 import "../App.css";
+import { PiUsersThreeFill } from "react-icons/pi";
+import { PiArrowsCounterClockwiseBold } from "react-icons/pi";
+
+import { GiHamburgerMenu } from "react-icons/gi";
 const Navbar = () => {
   return (
     <div>
-      <nav class="navbar navbar-expand-lg bg-body-primary">
+      <nav class="navbar navbar-expand-lg bg-body-primary d-lg-none">
         <div class="container-fluid">
- 
           <button
-            class="navbar-toggler"
+            class="btn btn-primary"
             type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample"
           >
-            <span class="navbar-toggler-icon"></span>
+            <GiHamburgerMenu />
           </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active text-light" aria-current="page" href="#">
-                  HOME
-                </a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link active text-light" href="#">
-                  LOG OUT
-                </a>
-              </li>
-            </ul>
+
+          <div
+            class="offcanvas offcanvas-start desktop-sidebar"
+            tabindex="-1"
+            id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel"
+            style={{ width: "20rem" }}
+          >
+            <div class="offcanvas-body">
+              <ul className="nav nav-pills flex-column mt-4 gap-3">
+                <li className="nav-item ">
+                  <a href="#" className="nav-link fs-5 flex gap-2">
+                    <PiUsersThreeFill />
+                    <i className="bi bi-bell"></i>
+                    User Info
+                  </a>
+                </li>
+                <li className="nav-item ">
+                  <a href="#" className="nav-link fs-5 flex gap-2">
+                    <PiArrowsCounterClockwiseBold />
+                    <i className="bi bi-search"></i>
+                    Resubmit form
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
