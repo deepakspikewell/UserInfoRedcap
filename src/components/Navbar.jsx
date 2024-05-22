@@ -7,7 +7,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 const Navbar = () => {
   return (
     <div>
-      <nav class="navbar navbar-expand-lg bg-body-primary d-lg-none">
+      <nav class=" navbar navbar-expand-lg bg-body-primary d-lg-none">
         <div class="container-fluid">
           <button
             class="btn btn-primary"

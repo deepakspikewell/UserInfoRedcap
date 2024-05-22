@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { BsPersonPlusFill } from "react-icons/bs";
 const Table = ({setShowForm}) => {
   const patients = [
     { firstName: "John", lastName: "Doe", email: "john.doe@example.com" },
@@ -21,7 +21,7 @@ const Table = ({setShowForm}) => {
         </div>
         <div>
           <button type="submit" className="btn btn-info " onClick={setShowForm}>
-            ADD USER
+          <BsPersonPlusFill /> User
           </button>
         </div>
       </div>
