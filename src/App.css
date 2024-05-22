@@ -100,10 +100,8 @@
   }
 }
 
-.table-container{
-  min-height: 60vh;
+
+
+::-webkit-scrollbar{
+  display: none;
 }
-
-
-
-

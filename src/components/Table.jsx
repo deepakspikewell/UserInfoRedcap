@@ -5,171 +5,7 @@ import "../App.css"; // Import the custom CSS file
 const Table = ({ setShowForm }) => {
   const patients = [
     { firstName: "John1", lastName: "Doe", email: "john.doe@example.com" },
-    { firstName: "Jane2", lastName: "Smith", email: "jane.smith@example.com" },
-    {
-      firstName: "Michael3",
-      lastName: "Brown",
-      email: "michael.brown@example.com",
-    },
-    {
-      firstName: "Mary4",
-      lastName: "Williams",
-      email: "mary.williams@example.com",
-    },
-    { firstName: "Jane2", lastName: "Smith", email: "jane.smith@example.com" },
-    {
-      firstName: "Michael3",
-      lastName: "Brown",
-      email: "michael.brown@example.com",
-    },
-    {
-      firstName: "Mary4",
-      lastName: "Williams",
-      email: "mary.williams@example.com",
-    },
-    { firstName: "Jane2", lastName: "Smith", email: "jane.smith@example.com" },
-    {
-      firstName: "Michael3",
-      lastName: "Brown",
-      email: "michael.brown@example.com",
-    },
-    {
-      firstName: "Mary4",
-      lastName: "Williams",
-      email: "mary.williams@example.com",
-    },
-    { firstName: "Jane2", lastName: "Smith", email: "jane.smith@example.com" },
-    {
-      firstName: "Michael3",
-      lastName: "Brown",
-      email: "michael.brown@example.com",
-    },
-    {
-      firstName: "Mary4",
-      lastName: "Williams",
-      email: "mary.williams@example.com",
-    },
-    { firstName: "Jane2", lastName: "Smith", email: "jane.smith@example.com" },
-    {
-      firstName: "Michael3",
-      lastName: "Brown",
-      email: "michael.brown@example.com",
-    },
-    {
-      firstName: "Mary4",
-      lastName: "Williams",
-      email: "mary.williams@example.com",
-    },
-    { firstName: "Jane2", lastName: "Smith", email: "jane.smith@example.com" },
-    {
-      firstName: "Michael3",
-      lastName: "Brown",
-      email: "michael.brown@example.com",
-    },
-    {
-      firstName: "Mary4",
-      lastName: "Williams",
-      email: "mary.williams@example.com",
-    },
-    { firstName: "Jane2", lastName: "Smith", email: "jane.smith@example.com" },
-    {
-      firstName: "Michael3",
-      lastName: "Brown",
-      email: "michael.brown@example.com",
-    },
-    {
-      firstName: "Mary4",
-      lastName: "Williams",
-      email: "mary.williams@example.com",
-    },
-    { firstName: "Jane2", lastName: "Smith", email: "jane.smith@example.com" },
-    {
-      firstName: "Michael3",
-      lastName: "Brown",
-      email: "michael.brown@example.com",
-    },
-    {
-      firstName: "Mary4",
-      lastName: "Williams",
-      email: "mary.williams@example.com",
-    },
-    { firstName: "Jane2", lastName: "Smith", email: "jane.smith@example.com" },
-    {
-      firstName: "Michael3",
-      lastName: "Brown",
-      email: "michael.brown@example.com",
-    },
-    {
-      firstName: "Mary4",
-      lastName: "Williams",
-      email: "mary.williams@example.com",
-    },
-    { firstName: "Jane2", lastName: "Smith", email: "jane.smith@example.com" },
-    {
-      firstName: "Michael3",
-      lastName: "Brown",
-      email: "michael.brown@example.com",
-    },
-    {
-      firstName: "Mary4",
-      lastName: "Williams",
-      email: "mary.williams@example.com",
-    },
-    { firstName: "Jane2", lastName: "Smith", email: "jane.smith@example.com" },
-    {
-      firstName: "Michael3",
-      lastName: "Brown",
-      email: "michael.brown@example.com",
-    },
-    {
-      firstName: "Mary4",
-      lastName: "Williams",
-      email: "mary.williams@example.com",
-    },
-    { firstName: "Jane2", lastName: "Smith", email: "jane.smith@example.com" },
-    {
-      firstName: "Michael3",
-      lastName: "Brown",
-      email: "michael.brown@example.com",
-    },
-    {
-      firstName: "Mary4",
-      lastName: "Williams",
-      email: "mary.williams@example.com",
-    },
-    { firstName: "Jane2", lastName: "Smith", email: "jane.smith@example.com" },
-    {
-      firstName: "Michael3",
-      lastName: "Brown",
-      email: "michael.brown@example.com",
-    },
-    {
-      firstName: "Mary4",
-      lastName: "Williams",
-      email: "mary.williams@example.com",
-    },
-    { firstName: "Jane2", lastName: "Smith", email: "jane.smith@example.com" },
-    {
-      firstName: "Michael3",
-      lastName: "Brown",
-      email: "michael.brown@example.com",
-    },
-    {
-      firstName: "Mary4",
-      lastName: "Williams",
-      email: "mary.williams@example.com",
-    },
-    { firstName: "Jane2", lastName: "Smith", email: "jane.smith@example.com" },
-    {
-      firstName: "Michael3",
-      lastName: "Brown",
-      email: "michael.brown@example.com",
-    },
-    {
-      firstName: "Mary4",
-      lastName: "Williams",
-      email: "mary.williams@example.com",
-    },
+    { firstName: "John1", lastName: "Doese", email: "john.doe@example.com" },
     { firstName: "Jane2", lastName: "Smith", email: "jane.smith@example.com" },
     {
       firstName: "Michael3",
@@ -256,19 +92,230 @@ const Table = ({ setShowForm }) => {
       lastName: "Williams",
       email: "mary.williams@example.com",
     },
-
+    {
+      firstName: "Mary4",
+      lastName: "Williams",
+      email: "mary.williams@example.com",
+    },
+    {
+      firstName: "Mary4",
+      lastName: "Williams",
+      email: "mary.williams@example.com",
+    },
+    {
+      firstName: "Mary4",
+      lastName: "Williams",
+      email: "mary.williams@example.com",
+    },
+    {
+      firstName: "Mary4",
+      lastName: "Williams",
+      email: "mary.williams@example.com",
+    },
+    {
+      firstName: "Mary4",
+      lastName: "Williams",
+      email: "mary.williams@example.com",
+    },
+    {
+      firstName: "Mary4",
+      lastName: "Williams",
+      email: "mary.williams@example.com",
+    },
+    {
+      firstName: "Mary4",
+      lastName: "Williams",
+      email: "mary.williams@example.com",
+    },
+    {
+      firstName: "Mary4",
+      lastName: "Williams",
+      email: "mary.williams@example.com",
+    },
+    {
+      firstName: "Mary4",
+      lastName: "Williams",
+      email: "mary.williams@example.com",
+    },
+    {
+      firstName: "Mary4",
+      lastName: "Williams",
+      email: "mary.williams@example.com",
+    },
+    {
+      firstName: "Mary4",
+      lastName: "Williams",
+      email: "mary.williams@example.com",
+    },
+    {
+      firstName: "Mary4",
+      lastName: "Williams",
+      email: "mary.williams@example.com",
+    },
+    {
+      firstName: "Mary4",
+      lastName: "Williams",
+      email: "mary.williams@example.com",
+    },
+    {
+      firstName: "Mary4",
+      lastName: "Williams",
+      email: "mary.williams@example.com",
+    },
+    {
+      firstName: "Mary4",
+      lastName: "Williams",
+      email: "mary.williams@example.com",
+    },
+    {
+      firstName: "Mary4",
+      lastName: "Williams",
+      email: "mary.williams@example.com",
+    },
+    {
+      firstName: "Mary4",
+      lastName: "Williams",
+      email: "mary.williams@example.com",
+    },
+    {
+      firstName: "Mary4",
+      lastName: "Williams",
+      email: "mary.williams@example.com",
+    },
+    {
+      firstName: "Mary4",
+      lastName: "Williams",
+      email: "mary.williams@example.com",
+    },
+    {
+      firstName: "Mary4",
+      lastName: "Williams",
+      email: "mary.williams@example.com",
+    },
+    {
+      firstName: "Mary4",
+      lastName: "Williams",
+      email: "mary.williams@example.com",
+    },
+    {
+      firstName: "Mary4",
+      lastName: "Williams",
+      email: "mary.williams@example.com",
+    },
+    {
+      firstName: "Mary4",
+      lastName: "Williams",
+      email: "mary.williams@example.com",
+    },
+    {
+      firstName: "Mary4",
+      lastName: "Williams",
+      email: "mary.williams@example.com",
+    },
+    {
+      firstName: "Mary4",
+      lastName: "Williams",
+      email: "mary.williams@example.com",
+    },
+    {
+      firstName: "Mary4",
+      lastName: "Williams",
+      email: "mary.williams@example.com",
+    },
+    {
+      firstName: "Mary4",
+      lastName: "Williams",
+      email: "mary.williams@example.com",
+    },
+    {
+      firstName: "Mary4",
+      lastName: "Williams",
+      email: "mary.williams@example.com",
+    },
+    {
+      firstName: "Mary4",
+      lastName: "Williams",
+      email: "mary.williams@example.com",
+    },
+    {
+      firstName: "Mary4",
+      lastName: "Williams",
+      email: "mary.williams@example.com",
+    },
+    {
+      firstName: "Mary4",
+      lastName: "Williams",
+      email: "mary.williams@example.com",
+    },
+    {
+      firstName: "Mary4",
+      lastName: "Williams",
+      email: "mary.williams@example.com",
+    },
+    {
+      firstName: "Mary4",
+      lastName: "Williams",
+      email: "mary.williams@example.com",
+    },
+    {
+      firstName: "Mary4",
+      lastName: "Williams",
+      email: "mary.williams@example.com",
+    },
+    {
+      firstName: "Mary4",
+      lastName: "Williams",
+      email: "mary.williams@example.com",
+    },
+    {
+      firstName: "Mary4",
+      lastName: "Williams",
+      email: "mary.williams@example.com",
+    },
+    {
+      firstName: "Mary4",
+      lastName: "Williams",
+      email: "mary.williams@example.com",
+    },
+    {
+      firstName: "Mary4",
+      lastName: "Williams",
+      email: "mary.williams@example.com",
+    },
     // Add more patients as needed for testing pagination
   ];
 
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 10;
+  const [search, setSearch] = useState("");
+  const itemsPerPage = 8;
 
   const handleClick = (id) => {
     setCurrentPage(Number(id));
   };
 
+  const handleSearchChange = (e) => {
+    setSearch(e.target.value);
+    setCurrentPage(1); // Reset to first page on search change
+  };
+
+  const filteredPatients = patients.filter((patient) => {
+    const searchTerms = search.trim().toLowerCase().split(" ");
+    if (searchTerms.length === 1) {
+      return (
+        patient.firstName.toLowerCase().includes(searchTerms[0]) ||
+        patient.lastName.toLowerCase().includes(searchTerms[0])
+      );
+    } else if (searchTerms.length > 1) {
+      return (
+        patient.firstName.toLowerCase().includes(searchTerms[0]) &&
+        patient.lastName.toLowerCase().includes(searchTerms[1])
+      );
+    }
+    return true;
+  });
+
   const getPageNumbers = () => {
-    const totalPages = Math.ceil(patients.length / itemsPerPage);
+    const totalPages = Math.ceil(filteredPatients.length / itemsPerPage);
     const maxPagesToShow = 5;
     const pages = [];
     let startPage = 1;
@@ -324,7 +371,7 @@ const Table = ({ setShowForm }) => {
 
   const indexOfLastPatient = currentPage * itemsPerPage;
   const indexOfFirstPatient = indexOfLastPatient - itemsPerPage;
-  const currentPatients = patients.slice(
+  const currentPatients = filteredPatients.slice(
     indexOfFirstPatient,
     indexOfLastPatient
   );
@@ -341,6 +388,16 @@ const Table = ({ setShowForm }) => {
             <BsPersonPlusFill /> User
           </button>
         </div>
+      </div>
+
+      <div className="mt-4">
+        <input
+          type="text"
+          className="form-control"
+          placeholder="Search by first or last name"
+          value={search}
+          onChange={handleSearchChange}
+        />
       </div>
 
       <div className="table-container d-none d-lg-block mt-4">

@@ -13,15 +13,16 @@ function App() {
 
   return (
     <>
-      <div>
-        <DDNavbar color="#e72222" text1="HOME" text2="LOG OUT"/>
+      <div className="vh-100 d-flex flex-column main-container">
+        <DDNavbar color="#e72222" text1="HOME" text2="LOG OUT" />
+        <DDNavbar color="#05266d" text1="Welcome" text2="dsb592002@gmail.com" />
 
-        <DDNavbar color="#05266d" text1="Welcome" text2="dsb592002@gmail.com"/>
-        <div className="gg d-flex vh-100">
+        <div className="flex-grow-1 d-flex">
+
           <Sidebar />
-          <div className=" mx-0 vw-100 ">
+          <div className=" mx-0 w-100 ">
             <Navbar />
-            <div className="container ">
+            <div className="container px-4 ">
               <Table setShowForm={() => setShowForm(true)} />
               <Form
                 showForm={showForm}
@@ -29,7 +30,9 @@ function App() {
               />
             </div>
           </div>
+
         </div>
+
       </div>
     </>
   );
