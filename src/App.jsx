@@ -17,9 +17,9 @@ function App() {
         <DDNavbar color="#e72222" text1="HOME" text2="LOG OUT"/>
 
         <DDNavbar color="#05266d" text1="Welcome" text2="dsb592002@gmail.com"/>
-        <div className="container-fluid d-flex  ">
+        <div className="gg d-flex vh-100">
           <Sidebar />
-          <div className=" mx-0 vw-100 vh-100 ">
+          <div className=" mx-0 vw-100 ">
             <Navbar />
             <div className="container ">
               <Table setShowForm={() => setShowForm(true)} />
