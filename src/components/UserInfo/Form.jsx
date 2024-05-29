@@ -1,48 +1,38 @@
 import React, { useState } from "react";
 
-import "../App.css";
+import "../../App.css";
 const Form = ({ showForm, setShowForm }) => {
-  const [showThanks, setShowThanks] = useState(true);
+  const [showThanks, setShowThanks] = useState(false);
 
   return (
     <div>
-      {showForm && !showThanks ? (
+      {true && !showThanks ? (
         <div className="popup-form-overlay">
           <div className="popup-form">
             <div className="popup-form-header">
               <h5 className="popup-form-title">Add User</h5>
-              <button
-                type="button"
-                className="btn btn-danger  "
-                onClick={setShowForm}
-              >
-                X
-              </button>
             </div>
             <div className="popup-form-body">
               <form>
-                <div className="mb-3">
+                <div className="mb-1">
+                  <label htmlFor="" className="form-lable">First Name</label>
                   <input
                     type="text"
                     className="form-control "
                     placeholder="Enter Your First Name"
                   />
                 </div>
-                <div className="mb-3">
+                <div className="mb-1">
+                <label htmlFor="" className="form-lable">Last Name</label>
                   <input
                     type="text"
                     className="form-control"
                     placeholder="Enter Your Last Email"
                   />
                 </div>
-                <div className="mb-3">
-                  <input
-                    type="text"
-                    className="form-control"
-                    placeholder="Enter Your User Name"
-                  />
-                </div>
-                <div className="mb-3">
+
+                <div className="mb-1">
+                <label htmlFor="" className="form-lable">Email</label>
                   <input
                     type="email"
                     className="form-control"
@@ -50,6 +40,7 @@ const Form = ({ showForm, setShowForm }) => {
                   />
                 </div>
                 <div className="mb-3">
+                <label htmlFor="" className="form-lable">Select privileges</label>
                   <select className="form-select">
                     <option>Select privileges</option>
                     <option>Admin</option>
@@ -57,9 +48,23 @@ const Form = ({ showForm, setShowForm }) => {
                     <option>Guest</option>
                   </select>
                 </div>
-                <button type="submit" className="btn btn-danger w-100">
-                  ADD USER
-                </button>
+                <div className="d-flex justify-content-center gap-4  ">
+                  <button
+                    type="submit"
+                    className="btn rounded-pill"
+                    style={{ backgroundColor: "#004879", color: "#E9ECEF" }}
+                  >
+                    Submit
+                  </button>
+                  <button
+                    type="button"
+                    className="btn rounded-pill  "
+                    onClick={setShowForm}
+                    style={{ backgroundColor: "#805791", color: "#E9ECEF" }}
+                  >
+                    Cancel
+                  </button>
+                </div>
               </form>
             </div>
           </div>

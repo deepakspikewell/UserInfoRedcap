@@ -1,23 +1,24 @@
 import React from "react";
 import { PiUsersThreeFill } from "react-icons/pi";
 import { PiArrowsCounterClockwiseBold } from "react-icons/pi";
+import { RiSettings5Fill } from "react-icons/ri";
 
-const Sidebar = () => {
+const Sidebar = ({setShowUserDetails,dontShow}) => {
   return (
-    <div className=" desktop-sidebar d-none d-lg-block " style={{ width: "400px" }}>
-      <ul className="nav nav-pills flex-column mt-4 gap-3">
-        <li className="nav-item ">
+    <div className=" desktop-sidebar flex-grow-1 " style={{ width: "300px"}}>
+      <ul className="nav nav-pills flex-column pt-4 gap-3">
+        <li className="nav-item " onClick={setShowUserDetails}>
           <a href="#" className="nav-link fs-5 flex gap-2">
             <PiUsersThreeFill />
             <i className="bi bi-bell"></i>
             User Info
           </a>
         </li>
-        <li className="nav-item ">
+        <li className="nav-item " onClick={dontShow}>
           <a href="#" className="nav-link fs-5 flex gap-2">
-            <PiArrowsCounterClockwiseBold />
+          <RiSettings5Fill />
             <i className="bi bi-search"></i>
-            Resubmit form
+            Survey Management
           </a>
         </li>
       </ul>

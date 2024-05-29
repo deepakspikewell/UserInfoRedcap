@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { BsPersonPlusFill } from "react-icons/bs";
-import "../App.css"; // Import the custom CSS file
+import { CiSearch } from "react-icons/ci";
+import "../../App.css"; // Import the custom CSS file
 
 const Table = ({ setShowForm }) => {
   const patients = [
@@ -72,106 +73,7 @@ const Table = ({ setShowForm }) => {
       lastName: "Williams",
       email: "mary.williams@example.com",
     },
-    {
-      firstName: "Mary4",
-      lastName: "Williams",
-      email: "mary.williams@example.com",
-    },
-    {
-      firstName: "Mary4",
-      lastName: "Williams",
-      email: "mary.williams@example.com",
-    },
-    {
-      firstName: "Mary4",
-      lastName: "Williams",
-      email: "mary.williams@example.com",
-    },
-    {
-      firstName: "Mary4",
-      lastName: "Williams",
-      email: "mary.williams@example.com",
-    },
-    {
-      firstName: "Mary4",
-      lastName: "Williams",
-      email: "mary.williams@example.com",
-    },
-    {
-      firstName: "Mary4",
-      lastName: "Williams",
-      email: "mary.williams@example.com",
-    },
-    {
-      firstName: "Mary4",
-      lastName: "Williams",
-      email: "mary.williams@example.com",
-    },
-    {
-      firstName: "Mary4",
-      lastName: "Williams",
-      email: "mary.williams@example.com",
-    },
-    {
-      firstName: "Mary4",
-      lastName: "Williams",
-      email: "mary.williams@example.com",
-    },
-    {
-      firstName: "Mary4",
-      lastName: "Williams",
-      email: "mary.williams@example.com",
-    },
-    {
-      firstName: "Mary4",
-      lastName: "Williams",
-      email: "mary.williams@example.com",
-    },
-    {
-      firstName: "Mary4",
-      lastName: "Williams",
-      email: "mary.williams@example.com",
-    },
-    {
-      firstName: "Mary4",
-      lastName: "Williams",
-      email: "mary.williams@example.com",
-    },
-    {
-      firstName: "Mary4",
-      lastName: "Williams",
-      email: "mary.williams@example.com",
-    },
-    {
-      firstName: "Mary4",
-      lastName: "Williams",
-      email: "mary.williams@example.com",
-    },
-    {
-      firstName: "Mary4",
-      lastName: "Williams",
-      email: "mary.williams@example.com",
-    },
-    {
-      firstName: "Mary4",
-      lastName: "Williams",
-      email: "mary.williams@example.com",
-    },
-    {
-      firstName: "Mary4",
-      lastName: "Williams",
-      email: "mary.williams@example.com",
-    },
-    {
-      firstName: "Mary4",
-      lastName: "Williams",
-      email: "mary.williams@example.com",
-    },
-    {
-      firstName: "Mary4",
-      lastName: "Williams",
-      email: "mary.williams@example.com",
-    },
+
     {
       firstName: "Mary4",
       lastName: "Williams",
@@ -287,7 +189,7 @@ const Table = ({ setShowForm }) => {
 
   const [currentPage, setCurrentPage] = useState(1);
   const [search, setSearch] = useState("");
-  const itemsPerPage = 8;
+  const itemsPerPage = 5;
 
   const handleClick = (id) => {
     setCurrentPage(Number(id));
@@ -382,86 +284,69 @@ const Table = ({ setShowForm }) => {
         className="d-flex justify-content-between mt-4 "
         style={{ fontWeight: "600", fontSize: "2rem", color: "#004879" }}
       >
-        <div>User Information</div>
-        <div>
-          <button type="submit" className="btn btn-info" onClick={setShowForm}>
+        <div className="d-lg-block d-none">User Information</div>
+        <div className="d-lg-none d-block">User Info</div>
+        <div className="d-flex flex-column-reverse align-items-end flex-lg-row lg-align-items-center gap-4">
+          <button
+            type="submit"
+            className="btn "
+            style={{ backgroundColor: "#004879", color: "#E9ECEF" }}
+            onClick={setShowForm}
+          >
             <BsPersonPlusFill /> User
           </button>
         </div>
       </div>
-
-      <div className="mt-4">
+      <div className="d-flex search-name align-items-center gap-2 mt-3">
+        <label
+          htmlFor=""
+          className="flex-shrink-0 "
+          style={{ color: "rgb(0, 72, 121)", fontWeight: "700" }}
+        >
+          Search User{" "}
+        </label>
         <input
           type="text"
           className="form-control"
-          placeholder="Search by first or last name"
+          placeholder="Search by first name, last name and user name"
           value={search}
           onChange={handleSearchChange}
         />
       </div>
 
-      <div className="table-container d-none d-lg-block mt-4">
-        <div className="row">
-          <div className="col-12">
-            <table className="table">
-              <thead className="table-light">
-                <tr>
-                  <th className="col">First Name</th>
-                  <th className="col">Last Name</th>
-                  <th className="col">Email</th>
-                </tr>
-              </thead>
-              <tbody>
-                {currentPatients.map((patient, index) => (
-                  <tr key={index}>
-                    <td>{patient.firstName}</td>
-                    <td>{patient.lastName}</td>
-                    <td>{patient.email}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+      <div class="container text-center mt-5 d-none d-lg-block "style={{borderBottom:"1px solid gray"}}>
+        <div class="row">
+          <div class="col-3 d-flex justify-content-start thead">First Name</div>
+          <div class="col-3 d-flex justify-content-start thead">Last Name</div>
+          <div class="col-6 d-flex justify-content-start thead">Email</div>
         </div>
       </div>
-
-      <div className="cards-container mt-4 d-lg-none">
-        {currentPatients.map((patient, index) => (
-          <div className="card" key={index}>
-            <div className="card-body">
-              <div className="col-lg-2 col-md-12 col-sm-12 d-flex justify-content-left mb-1">
-                <span
-                  className="d-lg-none"
-                  style={{ color: "black", fontWeight: "500" }}
-                >
-                  First Name:
-                </span>
-                <span className="patientsinfo text-primary">
-                  &nbsp;{patient.firstName}
-                </span>
+      <div class="d-lg-none mt-5"></div>
+      {currentPatients.map((patient) => {
+        return (
+          
+      
+          <div class="container text-center   tbody"style={{borderTop:"1px solid gray"}}>
+            <div class="row d-flex ">
+              <div class="col-lg-3 col-md-12 d-flex justify-content-start align-items-center">
+                <span className="d-lg-none d-block fs-4"style={{fontWeight:"700"}}>First Name :</span>
+                <span className=" fs-5">&nbsp;{patient.firstName}</span>
               </div>
-              <div className="col-lg-2 col-md-12 col-sm-12 d-flex justify-content-left mb-1">
-                <span
-                  className="d-lg-none"
-                  style={{ color: "black", fontWeight: "500" }}
-                >
-                  Last Name:
-                </span>
-                <span className="text-primary">&nbsp;{patient.lastName}</span>
+              <div class="col-lg-3 col-md-12 d-flex justify-content-start ">
+              <span className="d-lg-none d-block fs-4"style={{fontWeight:"700"}}>Last Name :</span>
+              
+                <span className="fs-5">&nbsp;{patient.lastName}</span>
               </div>
-              <div className="col-lg-2 col-md-12 col-sm-12 d-flex justify-content-left mb-1">
-                <span
-                  className="d-lg-none patientsinfoTop"
-                  style={{ color: "black", fontWeight: "500" }}
-                >
-                  Email:
-                </span>
-                <span className="text-primary">&nbsp;{patient.email}</span>
+              <div class="col-lg-3 col-md-12 d-flex justify-content-start ">
+              <span className="d-lg-none d-block fs-4"style={{fontWeight:"700"}}>Email :</span>
+                <span className="fs-5">&nbsp;{patient.email}</span>
+               
               </div>
             </div>
           </div>
-        ))}
-      </div>
+        
+        );
+      })}
       <nav className="mt-3">
         <ul className="pagination justify-content-center">
           {renderPageNumbers}
