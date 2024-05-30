@@ -1,26 +1,16 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
+import React, { useState } from "react";
 
-import DDNavbar from "./components/DoubleNavbar";
-import UserDetails from "./components/UserInfo/UserDetails";
-import SurveyInfo from "./components/SurveyDetails/SurveyInfo";
-import Sidebar from "./components/Sidebar";
+import Sidebar from "../Sidebar";
+import Table from "./Table";
+import Form from "./Form";
 import { FaArrowCircleRight } from "react-icons/fa";
-import SurveyList from "./components/SurveyDetails/SurveyList";
+import { PiArrowsCounterClockwiseBold, PiUsersThreeFill } from "react-icons/pi";
 
-function App() {
-
-
+const UserDetails = () => {
+  const [showForm, setShowForm] = useState(false);
+  const [showUserDetails, setShowUserDetails] = useState(true);
   return (
-    <>
-      <div className="vh-100 d-flex flex-column main-container">
-        <DDNavbar color="#e72222" text1="HOME" text2="LOG OUT" />
-        <DDNavbar color="#05266d" text1="Welcome" text2="dsb592002@gmail.com" />
-
-        
-        <div className="flex-grow-1 d-flex">
+    <div className="flex-grow-1 d-flex">
       <div className="d-lg-flex d-none" style={{width:"300px"}}>
         <Sidebar
           setShowUserDetails={() => setShowUserDetails(true)}
@@ -49,19 +39,18 @@ function App() {
             <Sidebar />
           </div>
         </div>
-        {true && (
+        {showUserDetails && (
           <div className=" px-4 ">
-           <SurveyList/>
+            <Table setShowForm={() => setShowForm(true)} />
+            <Form
+              showForm={showForm}
+              setShowForm={() => (setShowForm(false), handleClick(0))}
+            />
           </div>
         )}
       </div>
     </div>
-
-        
-
-      </div>
-    </>
   );
-}
+};
 
-export default App;
+export default UserDetails;

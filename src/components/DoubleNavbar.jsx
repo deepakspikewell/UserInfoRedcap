@@ -1,9 +1,10 @@
 import React from "react";
-import "../App.css";
-const Navbar = () => {
+
+const DDNavbar = ({color,text1,text2}) => {
+
   return (
     <div>
-      <nav class="navbar navbar-expand-lg bg-body-primary">
+      <nav class="navbar navbar-expand-lg bg-body-primary vw-100" style={{"backgroundColor":color}}>
         <div class="container-fluid">
  
           <button
@@ -21,12 +22,12 @@ const Navbar = () => {
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link active text-light" aria-current="page" href="#">
-                  HOME
+                  {text1}
                 </a>
               </li>
               <li class="nav-item ">
                 <a class="nav-link active text-light" href="#">
-                  LOG OUT
+                  {text2}
                 </a>
               </li>
             </ul>
@@ -37,4 +38,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default DDNavbar;
